@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { JSX } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -24,10 +24,13 @@ import {
 import projects from "../../../components/projects.json";
 
 // Mapeo de tecnologías a íconos
-const techIcons = {
+const techIcons: Record<
+  "React" | "Next.js" | "Material UI" | "Tailwind CSS" | "Figma" | "WordPress" | "Elementor",
+  JSX.Element
+> = {
   React: <SiReact size={24} color="#fff" />,
   "Next.js": <SiNextdotjs size={24} color="#fff" />,
-  "Material UI": <SiMaterialdesign size={24} color="#fff" />, // Cambiado aquí
+  "Material UI": <SiMaterialdesign size={24} color="#fff" />,
   "Tailwind CSS": <SiTailwindcss size={24} color="#fff" />,
   Figma: <SiFigma size={24} color="#fff" />,
   WordPress: <SiWordpress size={24} color="#fff" />,
@@ -125,10 +128,9 @@ const ProjectPage = () => {
             zIndex: 2,
           }}
         >
-          {project.technologies.map((tech, index) => (
+          {project.technologies.map((tech) => (
             <Box
-              mb={2}
-              key={index}
+              key={tech}
               sx={{
                 width: "40px",
                 height: "40px",
@@ -139,7 +141,7 @@ const ProjectPage = () => {
                 borderRadius: "8px",
               }}
             >
-              {techIcons[tech] || null}
+              {techIcons[tech as keyof typeof techIcons] || null}
             </Box>
           ))}
         </Box>
@@ -181,7 +183,7 @@ const ProjectPage = () => {
       {/* Información del proyecto */}
       <Box sx={{ padding: 4 }}>
         <Box sx={{ padding: 4 }}>
-          {project.description.map((paragraph, index) => (
+          {/* {project.description.map((paragraph, index) => (
             <Box
               key={index}
               sx={{
@@ -201,7 +203,7 @@ const ProjectPage = () => {
                 {paragraph}
               </Typography>
             </Box>
-          ))}
+          ))} */}
         </Box>
 
         {/* Galería */}
