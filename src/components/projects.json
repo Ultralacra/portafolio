@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Stickys",
+     "description": [
+    "Stickys es una tienda en línea chilena que ofrece accesorios innovadores para dispositivos móviles, destacando por su producto estrella: STICKYS. Estos accesorios están fabricados con silicona de alta calidad y se presentan en diversos colores, como Clear, Dark, Light Blue y Gum, con precios que oscilan entre $12.490 y $14.590.",
+    "La tienda se enfoca en brindar una experiencia de compra cómoda y rápida, ofreciendo entrega rápida y opciones de pago fáciles. Además, cuentan con despacho gratuito para compras sobre $35.000 en la Región Metropolitana.",
+    "Para mantener una comunicación cercana con sus clientes, Stickys proporciona canales de contacto como el correo electrónico contacto@stickys.cl y está presente en redes sociales como Instagram y TikTok, donde comparten actualizaciones y promociones.",
+    "La tienda también ofrece recursos adicionales en su sitio web, incluyendo políticas de cambio y devolución, preguntas frecuentes, consejos de uso y políticas de privacidad, asegurando transparencia y confianza en cada compra.",
+    "En resumen, Stickys se posiciona como una opción destacada para quienes buscan accesorios funcionales y de calidad para sus dispositivos móviles en Chile, respaldados por un servicio al cliente atento y eficiente."
+  ],
+    "image": "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_1.png",
+    "slug": "stickys",
+    "client": "Stickys.cl",
+    "launchDate": "2022",
+    "url": "https://animalaria.cl",
+    "images": [
+      "https://indrasolutions.cl/wp-content/uploads/2024/12/a2.png",
+      "https://indrasolutions.cl/wp-content/uploads/2024/12/a1.png",
+      "https://indrasolutions.cl/wp-content/uploads/2024/12/a3.png",
+      "https://indrasolutions.cl/wp-content/uploads/2024/12/a5.png"
+    ],
+    "technologies": ["React", "Next.js", "Material UI", "Tailwind CSS", "Figma"]
+  },
+  {
+    "title": "Animalaria",
+    "description": [
+      "Animalaria es una tienda en línea chilena especializada en ilustraciones y productos decorativos con temáticas animales, creada por la artista María José Abogabir. Ofrece una amplia variedad de productos, incluyendo cuadros, papel mural, stickers de pared y textiles, dirigidos tanto a niños como a adultos.",
+      "Las ilustraciones de Animalaria se destacan por su estilo en acuarela, presentando animales en diversas temáticas, como iniciales personalizadas, animales con coronas de flores, vírgenes para santitos, nombres y paisajes. Estos diseños buscan aportar belleza y tranquilidad a los espacios, con trazos simples y delicados, y colores que se mezclan de forma armónica y natural.",
+      "Todos los productos de Animalaria son fabricados a pedido en Chile, garantizando un toque personalizado en cada uno. Los tiempos de producción varían según el tipo de producto; por ejemplo, los cuadros tienen un tiempo máximo de producción de 15 días hábiles desde la compra. Además, ofrecen la posibilidad de realizar encargos personalizados para adaptarse a las necesidades específicas de los clientes.",
+      "Para consultas o solicitudes especiales, Animalaria pone a disposición de los clientes diversos canales de contacto, incluyendo correo electrónico y WhatsApp, asegurando una comunicación fluida y personalizada.",
+      "En resumen, Animalaria combina arte y decoración, ofreciendo productos únicos y personalizados que destacan por su calidad y el cuidado en los detalles, reflejando la pasión de su creadora por el mundo animal y el arte en acuarela."
+    ],
+    "image": "https://indrasolutions.cl/wp-content/uploads/2024/10/FOTO-FEED-1297-ANCHO-700-.jpg",
+    "slug": "animalaria",
+    "client": "Animalaria.cl",
+    "launchDate": "2023",
+        "url": "https://animalaria.cl",
+
+    "images": [
+      "https://indrasolutions.cl/wp-content/uploads/2024/12/a2.png",
+      "https://indrasolutions.cl/wp-content/uploads/2024/12/a1.png"
+    ],
+    "technologies": ["React", "Next.js", "Material UI", "Tailwind CSS", "Figma"]
+  },
+  {
+    "title": "MoveYourHouse",
+    "description": "Aplicación web para gestionar mudanzas.",
+    "image": "https://indrasolutions.cl/wp-content/uploads/2024/12/a5.png",
+    "slug": "moveyourhouse",
+    "client": "MoveYourHouse App",
+    "launchDate": "2021",
+    "images": [
+      "https://indrasolutions.cl/wp-content/uploads/2024/12/a2.png",
+      "https://indrasolutions.cl/wp-content/uploads/2024/12/a1.png"
+    ],
+    "technologies": ["React", "Next.js", "Material UI", "Tailwind CSS", "Figma"]
+  }
+]
