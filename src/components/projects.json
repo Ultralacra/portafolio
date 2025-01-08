@@ -1,27 +1,5 @@
 [
   {
-    "title": "Stickys",
-     "description": [
-    "Stickys es una tienda en línea chilena que ofrece accesorios innovadores para dispositivos móviles, destacando por su producto estrella: STICKYS. Estos accesorios están fabricados con silicona de alta calidad y se presentan en diversos colores, como Clear, Dark, Light Blue y Gum, con precios que oscilan entre $12.490 y $14.590.",
-    "La tienda se enfoca en brindar una experiencia de compra cómoda y rápida, ofreciendo entrega rápida y opciones de pago fáciles. Además, cuentan con despacho gratuito para compras sobre $35.000 en la Región Metropolitana.",
-    "Para mantener una comunicación cercana con sus clientes, Stickys proporciona canales de contacto como el correo electrónico contacto@stickys.cl y está presente en redes sociales como Instagram y TikTok, donde comparten actualizaciones y promociones.",
-    "La tienda también ofrece recursos adicionales en su sitio web, incluyendo políticas de cambio y devolución, preguntas frecuentes, consejos de uso y políticas de privacidad, asegurando transparencia y confianza en cada compra.",
-    "En resumen, Stickys se posiciona como una opción destacada para quienes buscan accesorios funcionales y de calidad para sus dispositivos móviles en Chile, respaldados por un servicio al cliente atento y eficiente."
-  ],
-    "image": "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_1.png",
-    "slug": "stickys",
-    "client": "Stickys.cl",
-    "launchDate": "2022",
-    "url": "https://animalaria.cl",
-    "images": [
-      "https://indrasolutions.cl/wp-content/uploads/2024/12/a2.png",
-      "https://indrasolutions.cl/wp-content/uploads/2024/12/a1.png",
-      "https://indrasolutions.cl/wp-content/uploads/2024/12/a3.png",
-      "https://indrasolutions.cl/wp-content/uploads/2024/12/a5.png"
-    ],
-    "technologies": ["React", "Next.js", "Material UI", "Tailwind CSS", "Figma"]
-  },
-  {
     "title": "Animalaria",
     "description": [
       "Animalaria es una tienda en línea chilena especializada en ilustraciones y productos decorativos con temáticas animales, creada por la artista María José Abogabir. Ofrece una amplia variedad de productos, incluyendo cuadros, papel mural, stickers de pared y textiles, dirigidos tanto a niños como a adultos.",
@@ -34,25 +12,163 @@
     "slug": "animalaria",
     "client": "Animalaria.cl",
     "launchDate": "2023",
-        "url": "https://animalaria.cl",
-
+    "url": "https://animalaria.cl",
     "images": [
-      "https://indrasolutions.cl/wp-content/uploads/2024/12/a2.png",
-      "https://indrasolutions.cl/wp-content/uploads/2024/12/a1.png"
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_16.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_7-1.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_8-1.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_9-1.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_10-1.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_11-1.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_12-2.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_13-1.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_14-1.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_15.png"
     ],
     "technologies": ["React", "Next.js", "Material UI", "Tailwind CSS", "Figma"]
   },
   {
-    "title": "MoveYourHouse",
-    "description": "Aplicación web para gestionar mudanzas.",
-    "image": "https://indrasolutions.cl/wp-content/uploads/2024/12/a5.png",
-    "slug": "moveyourhouse",
-    "client": "MoveYourHouse App",
-    "launchDate": "2021",
+    "title": "Stickys",
+     "description": [
+    "Stickys es una tienda en línea chilena que ofrece accesorios innovadores para dispositivos móviles, destacando por su producto estrella: STICKYS. Estos accesorios están fabricados con silicona de alta calidad y se presentan en diversos colores, como Clear, Dark, Light Blue y Gum, con precios que oscilan entre $12.490 y $14.590.",
+    "La tienda se enfoca en brindar una experiencia de compra cómoda y rápida, ofreciendo entrega rápida y opciones de pago fáciles. Además, cuentan con despacho gratuito para compras sobre $35.000 en la Región Metropolitana.",
+    "Para mantener una comunicación cercana con sus clientes, Stickys proporciona canales de contacto como el correo electrónico contacto@stickys.cl y está presente en redes sociales como Instagram y TikTok, donde comparten actualizaciones y promociones.",
+    "La tienda también ofrece recursos adicionales en su sitio web, incluyendo políticas de cambio y devolución, preguntas frecuentes, consejos de uso y políticas de privacidad, asegurando transparencia y confianza en cada compra.",
+    "En resumen, Stickys se posiciona como una opción destacada para quienes buscan accesorios funcionales y de calidad para sus dispositivos móviles en Chile, respaldados por un servicio al cliente atento y eficiente."
+  ],
+    "image": "https://indrasolutions.cl/wp-content/uploads/2024/11/9V0A0276_2-1-scaled.jpg",
+    "slug": "stickys",
+    "client": "Stickys.cl",
+    "launchDate": "2024",
+    "url": "https://www.stickys.cl/",
     "images": [
-      "https://indrasolutions.cl/wp-content/uploads/2024/12/a2.png",
-      "https://indrasolutions.cl/wp-content/uploads/2024/12/a1.png"
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_1-6.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_2-3.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_17.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_18.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_19.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_21.png"
     ],
     "technologies": ["React", "Next.js", "Material UI", "Tailwind CSS", "Figma"]
+  },
+  {
+    "title": "Move Your House",
+  "description": [
+  "Move Your House es una aplicación web diseñada para facilitar el proceso de mudanza de los usuarios. La plataforma incluye a 'Naty Moover', una asesora virtual interactiva que guía a los clientes en la recopilación de información necesaria para generar una cotización personalizada.",
+  "La aplicación permite a los usuarios programar su mudanza con al menos 24 horas de anticipación, garantizando una planificación adecuada. Mediante una serie de preguntas, el sistema recopila detalles sobre los artículos a trasladar, proporcionando una estimación rápida y precisa del costo del servicio.",
+  "Move Your House es parte de los servicios ofrecidos por la empresa chilena especializada en mudanzas en Santiago. Se caracteriza por soluciones personalizadas y eficientes para el traslado de pertenencias, destacándose por su atención al cliente y capacidad de adaptación a necesidades individuales.",
+  "La interfaz es amigable e intuitiva, mejorando la experiencia del usuario al ofrecer un proceso de cotización simplificado y guiado. Además, la plataforma asegura que los clientes obtengan un servicio confiable y adaptado a sus requerimientos específicos.",
+  "En resumen, Move Your House combina tecnología y logística para ofrecer una experiencia digital eficiente y personalizada en el ámbito de mudanzas, optimizando tiempos y facilitando la coordinación de servicios."
+],
+    "image": "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_1-1.png",
+    "slug": "moveyourhouse",
+    "client": "MoveYourHouse App",
+    "launchDate": "2024",
+    "url": "https://moveyourhouse-app.vercel.app/",
+    "images": [
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/screencapture-moveyourhouse-app-vercel-app-2025-01-08-19_22_10.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/screencapture-moveyourhouse-app-vercel-app-2025-01-08-19_22_39.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/screencapture-moveyourhouse-app-vercel-app-2025-01-08-19_24_03.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/screencapture-moveyourhouse-app-vercel-app-2025-01-08-19_24_29.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/screencapture-moveyourhouse-app-vercel-app-2025-01-08-19_24_47.png"
+    ],
+    "technologies": ["React", "Next.js", "Material UI", "Tailwind CSS", "Figma"]
+  },
+  {
+    "title": "Move Your House Dashboard (Admin panel)",
+  "description": [
+  "La aplicación web Move Your House ofrece una interfaz de inicio de sesión para acceder a su panel de control. Los usuarios deben ingresar su correo electrónico y contraseña para acceder a las funcionalidades internas de la plataforma.",
+  "El panel de control está diseñado para que los usuarios gestionen y supervisen diversos aspectos de sus servicios de mudanza, proporcionando herramientas para una administración eficiente y personalizada.",
+  "La interfaz de inicio de sesión es sencilla y directa, garantizando que solo usuarios autorizados puedan acceder al panel de control, lo que refuerza la seguridad y confidencialidad de la información.",
+  "En caso de olvidar la contraseña, la plataforma ofrece opciones de recuperación para asegurar que los usuarios puedan restablecer su acceso de manera rápida y segura.",
+  "En resumen, el portal de inicio de sesión de Move Your House es una puerta de entrada segura y eficiente al panel de control, permitiendo a los usuarios gestionar sus servicios de mudanza de manera efectiva."
+],
+    "image": "https://indrasolutions.cl/wp-content/uploads/2025/01/screencapture-moveyourhouse-dashboard-vercel-app-login-2025-01-08-19_33_21.png",
+    "slug": "moveyourhouseadmin",
+    "client": "MoveYourHouse App",
+    "launchDate": "2024",
+    "url": "https://moveyourhouse-dashboard.vercel.app/login",
+    "images": [
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_12.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_2.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/screencapture-moveyourhouse-dashboard-vercel-app-cotizaciones-detalle-b8b5f182-0b35-4331-b43f-7a5525b8b852-2025-01-08-19_36_27.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/screencapture-moveyourhouse-app-vercel-app-2025-01-08-19_24_47.png"
+    ],
+    "technologies": ["React", "Next.js", "Material UI", "Tailwind CSS", "Figma"]
+  },
+   {
+    "title": "Finpo",
+ "description": [
+  "Finpo es una plataforma chilena que optimiza la gestión de facturas y facilita la conexión entre empresas y servicios de factoring. A través de su portal de inicio de sesión, los usuarios pueden acceder a herramientas que permiten subir, publicar y gestionar facturas de manera directa y eficiente.",
+  "La plataforma ofrece comunicación directa con empresas de factoring de confianza, permitiendo a las empresas recibir ofertas competitivas para el financiamiento de sus facturas. Además, Finpo proporciona notificaciones en tiempo real sobre el estado de cesión y aprobación de facturas, asegurando una gestión transparente y oportuna.",
+  "Finpo se destaca por su compromiso con la seguridad y confidencialidad de los datos, garantizando que la información financiera de las empresas esté protegida. La interfaz de inicio de sesión es sencilla e intuitiva, facilitando el acceso a las funcionalidades internas de la plataforma.",
+  "En caso de no tener una cuenta, Finpo ofrece la opción de registro para que nuevas empresas puedan beneficiarse de sus servicios. Asimismo, dispone de mecanismos para la recuperación de contraseñas, asegurando que los usuarios puedan restablecer su acceso de manera rápida y segura.",
+  "En resumen, Finpo proporciona una solución integral para la gestión de facturas y la obtención de financiamiento a través de factoring, ofreciendo una plataforma segura, eficiente y fácil de usar para las empresas en Chile."
+],
+    "image": "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_1-4.png",
+    "slug": "finpo",
+    "client": "Finpo",
+    "launchDate": "2024",
+    "url": "https://moveyourhouse-dashboard.vercel.app/",
+    "images": [
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_1-4.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_2-1.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_3.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_4.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_5.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_6.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_7.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_8.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_10.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_11.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_12-1.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_13.png"
+    ],
+    "technologies": ["React", "Next.js", "Material UI", "Tailwind CSS", "Figma"]
+  },
+   {
+    "title": "Telefactor Scoring",
+"description": [
+  "Telefactor es una plataforma en línea que ofrece servicios de evaluación de riesgo crediticio para empresas. A través de su portal de inicio de sesión, los usuarios pueden acceder a informes comerciales detallados que facilitan la toma de decisiones financieras.",
+  "La plataforma permite a las empresas evaluar la capacidad financiera de clientes y proveedores, mitigar riesgos de crédito y explorar nuevos mercados con confianza. Los informes proporcionan análisis razonados del comportamiento crediticio histórico y actual, respaldados por expertos en riesgo de crédito.",
+  "Telefactor se destaca por su facilidad de uso, requiriendo solo el RUT y el monto a evaluar para generar informes en línea, sin necesidad de contratos ni integraciones complejas. Además, ofrece planes flexibles que se adaptan a las necesidades de diferentes tipos de empresas.",
+  "La interfaz de inicio de sesión es sencilla e intuitiva, garantizando que solo usuarios autorizados puedan acceder a la información confidencial. En caso de olvidar la contraseña, la plataforma ofrece opciones de recuperación para asegurar que los usuarios puedan restablecer su acceso de manera rápida y segura.",
+  "En resumen, Telefactor proporciona una solución eficiente y confiable para la evaluación de riesgos crediticios, permitiendo a las empresas tomar decisiones informadas y reducir la morosidad y los fraudes en sus operaciones comerciales."
+],
+    "image": "https://indrasolutions.cl/wp-content/uploads/2025/01/1.png",
+    "slug": "telefactor",
+    "client": "Telefactor",
+    "launchDate": "2023",
+    "url": "https://telefactor.netlify.app/login",
+    "images": [
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_1-5.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_5-1.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_4-1.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_3-1.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_2-2.png"
+    ],
+    "technologies": ["React", "Next.js", "Material UI", "Tailwind CSS", "Figma"]
+  },
+   {
+    "title": "Liquidez Capital",
+"description": [
+  "La intranet de Liquidez Capital es una plataforma en línea que permite a los usuarios acceder a servicios financieros especializados, como factoring y financiamiento para pequeñas y medianas empresas (MiPyMEs). A través de su portal de inicio de sesión, los clientes pueden gestionar sus operaciones financieras de manera eficiente y segura.",
+  "La interfaz de inicio de sesión es sencilla e intuitiva, requiriendo que los usuarios ingresen su correo electrónico y contraseña para acceder a las funcionalidades internas de la plataforma. En caso de olvidar la contraseña, la intranet ofrece opciones de recuperación para asegurar que los usuarios puedan restablecer su acceso de manera rápida y segura.",
+  "Una vez dentro, los usuarios pueden realizar simulaciones, ceder facturas y acceder a diversos servicios financieros que Liquidez Capital ofrece, adaptados a las necesidades específicas de las MiPyMEs. La plataforma está diseñada para proporcionar un servicio ágil y flexible, acompañada de un equipo humano altamente calificado y empático para entregar productos a la medida de las necesidades de los clientes.",
+  "En resumen, la intranet de Liquidez Capital es una herramienta digital que facilita la gestión de servicios financieros para las MiPyMEs, ofreciendo una experiencia de usuario eficiente y personalizada, respaldada por un equipo comprometido con la inclusión financiera y el apoyo a las empresas de menor tamaño."
+],
+    "image": "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_6-2.png",
+    "slug": "liquidez",
+    "client": "Liquidez Capital",
+    "launchDate": "2022",
+    "url": "https://intranet.liquidez.cl/login",
+    "images": [
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_1-7.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_2-4.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_3-2.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_4-2.png",
+      "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_5-2.png"
+    ],
+    "technologies": ["React", "Next.js", "Material UI", "Figma"]
   }
 ]

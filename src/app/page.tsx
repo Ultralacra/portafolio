@@ -34,7 +34,7 @@ const Home = () => {
             gutterBottom 
            
           >
-         Case Studies
+         Realizados por mi...
           </Typography>
           <Grid
             container

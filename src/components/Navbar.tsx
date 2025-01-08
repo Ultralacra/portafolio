@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import * as React from 'react'
+import * as React from "react";
 import {
   AppBar,
   Toolbar,
@@ -9,86 +9,78 @@ import {
   Typography,
   useScrollTrigger,
   Stack,
-} from '@mui/material'
-import { styled, alpha } from '@mui/material/styles'
+  IconButton,
+  Avatar,
+} from "@mui/material";
+import { styled, alpha } from "@mui/material/styles";
+import { GitHub, LinkedIn, WhatsApp, PictureAsPdf } from "@mui/icons-material";
 
 // Styled AppBar component with blur effect
 const BlurredAppBar = styled(AppBar)(({ theme }) => ({
-  background: '#111823',
-  boxShadow: 'none',
-  transition: 'all 0.3s ease-in-out',
-  '&.scrolled': {
-    backdropFilter: 'blur(10px)',
+  background: "#111823",
+  boxShadow: "none",
+  transition: "all 0.3s ease-in-out",
+  "&.scrolled": {
+    backdropFilter: "blur(10px)",
     backgroundColor: alpha(theme.palette.background.default, 0.7),
     boxShadow: theme.shadows[4],
   },
-}))
+}));
 
 // Styled Button for navigation items
 const NavButton = styled(Button)(({ theme }) => ({
-  color: '#fff',
-  '&:hover': {
+  color: "#fff",
+  textTransform: "lowercase",
+  transition: "color 0.3s ease",
+  "&.scrolled": {
+    color: "#000",
+  },
+  "&:hover": {
     backgroundColor: alpha(theme.palette.common.white, 0.1),
   },
-}))
-
-// Styled Button for Sign Up
-const SignUpButton = styled(Button)(({ theme }) => ({
-  backgroundColor: theme.palette.common.white,
-  color: theme.palette.common.black,
-  '&:hover': {
-    backgroundColor: alpha(theme.palette.common.white, 0.9),
-  },
-}))
+}));
 
 export default function Navbar() {
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 100,
-  })
+  });
 
   return (
-    <BlurredAppBar className={trigger ? 'scrolled' : ''} position="fixed">
+    <BlurredAppBar className={trigger ? "scrolled" : ""} position="fixed">
       <Container maxWidth="xl">
         <Toolbar
           disableGutters
           sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
           }}
         >
           {/* Logo Section - Left */}
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              fontWeight: 700,
-              color: 'inherit',
-              textDecoration: 'none',
-              flexBasis: '200px', // Fixed width for logo section
-            }}
-          >
-            EMPERIA
-          </Typography>
-
-          {/* Navigation Items - Center */}
           <Stack
             direction="row"
+            alignItems="center"
             spacing={2}
-            sx={{
-              display: 'flex',
-              justifyContent: 'center',
-              flex: 1,
-            }}
+            sx={{ flexBasis: "200px" }}
           >
-            <NavButton>CREATOR TOOLS</NavButton>
-            <NavButton>USE CASES</NavButton>
-            <NavButton>RESOURCES</NavButton>
-            <NavButton>ABOUT</NavButton>
-            <NavButton>PRICING</NavButton>
+            <Avatar
+              alt="Your Name"
+              src="https://indrasolutions.cl/wp-content/uploads/2025/01/IMG_20250102_114600.jpg"
+            />
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              href="/"
+              sx={{
+                fontWeight: 700,
+                color: trigger ? "#000" : "#fff",
+                textDecoration: "none",
+              }}
+            >
+              CM Portfolio
+            </Typography>
           </Stack>
 
           {/* Action Buttons - Right */}
@@ -96,16 +88,56 @@ export default function Navbar() {
             direction="row"
             spacing={2}
             sx={{
-              flexBasis: '200px', // Fixed width for buttons section
-              justifyContent: 'flex-end',
+              flexBasis: "200px", // Fixed width for buttons section
+              justifyContent: "flex-end",
+              alignItems: "center",
             }}
           >
-            <NavButton>CONTACT</NavButton>
-            <NavButton>LOGIN</NavButton>
-            <SignUpButton variant="contained">SIGN UP</SignUpButton>
+            <NavButton className={trigger ? "scrolled" : ""}>
+              Contáctame
+            </NavButton>
+            <NavButton
+              href="/path/to/cv.pdf"
+             // target="_blank"
+              rel="noopener noreferrer"
+              startIcon={<PictureAsPdf />}
+              sx={{
+                color: trigger ? "#000" : "#fff",
+
+                whiteSpace: "nowrap", // Evitar salto de línea
+              }}
+            >
+              Descargar cv
+            </NavButton>
+
+            {/* Icons */}
+            <IconButton
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: trigger ? "#000" : "#fff" }}
+            >
+              <GitHub />
+            </IconButton>
+            <IconButton
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: trigger ? "#000" : "#fff" }}
+            >
+              <LinkedIn />
+            </IconButton>
+            <IconButton
+              href="https://wa.me"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: trigger ? "#000" : "#fff" }}
+            >
+              <WhatsApp />
+            </IconButton>
           </Stack>
         </Toolbar>
       </Container>
     </BlurredAppBar>
-  )
+  );
 }

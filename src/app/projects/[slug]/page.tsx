@@ -83,13 +83,14 @@ const ProjectPage = () => {
           variant="outlined"
           onClick={() => router.push("/")}
           sx={{
+            textTransform:"none",
             position: "absolute",
             top: "20px",
             left: "20px",
             color: "white",
             fontWeight: "bold",
             borderRadius: "20px",
-            border: "2px solid rgba(255, 255, 255, 0.8)",
+            border: "2px solid transparent",
             backgroundColor: "rgba(0, 0, 0, 0.3)",
             zIndex: 2,
             "&:hover": {
@@ -130,6 +131,7 @@ const ProjectPage = () => {
         >
           {project.technologies.map((tech) => (
             <Box
+              mb={2}
               key={tech}
               sx={{
                 width: "40px",
@@ -183,7 +185,7 @@ const ProjectPage = () => {
       {/* Información del proyecto */}
       <Box sx={{ padding: 4 }}>
         <Box sx={{ padding: 4 }}>
-          {/* {project.description.map((paragraph, index) => (
+          {project.description.map((paragraph, index) => (
             <Box
               key={index}
               sx={{
@@ -203,11 +205,13 @@ const ProjectPage = () => {
                 {paragraph}
               </Typography>
             </Box>
-          ))} */}
+          ))}
         </Box>
 
         {/* Galería */}
-        <Grid container spacing={2}>
+        <Grid
+        
+          container spacing={2}>
           {project.images.slice(0, 10).map((image, index) => (
             <Grid item xs={12} sm={4} key={index}>
               <Card sx={{ borderRadius: "16px", overflow: "hidden" }}>
