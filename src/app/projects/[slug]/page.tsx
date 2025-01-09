@@ -39,11 +39,11 @@ const techIcons: Record<
 };
 
 const ProjectPage = () => {
-  const { slug } = useParams();
+  const params = useParams() as { slug: string }; // Define `slug` como un string
   const router = useRouter();
 
   // Encuentra el proyecto por el slug
-  const project = projects.find((proj) => proj.slug === slug);
+  const project = projects.find((proj) => proj.slug === params.slug);
 
   if (!project) {
     return <div>Proyecto no encontrado</div>;
