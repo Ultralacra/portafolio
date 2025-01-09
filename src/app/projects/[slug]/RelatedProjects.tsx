@@ -11,21 +11,21 @@ interface Project {
 export default function RecentProjects() {
   const projects: Project[] = [
     {
-      title: "WALMART REALM | HOLIDAYS 2024",
+      title: "Sistema de administracion de Ecommerce",
       image: "https://indrasolutions.cl/wp-content/uploads/2024/10/Copia-de-FOTO-FEED-1297-X-700.jpg",
     },
     {
-      title: "WALMART REALM | YOUR DORM YOUR WAY",
-      image: "https://indrasolutions.cl/wp-content/uploads/2024/10/Copia-de-FOTO-FEED-1297-X-700.jpg",
+      title: "Re design Indra Web",
+      image: "https://indrasolutions.cl/wp-content/uploads/2025/01/Screenshot_7-2.png",
     },
     {
-      title: "L'OCCITANE GREENHOUSE",
+      title: "",
       image: "https://indrasolutions.cl/wp-content/uploads/2024/10/Copia-de-FOTO-FEED-1297-X-700.jpg",
     },
   ]
 
   return (
-    <Box sx={{ bgcolor: '#1a1a1a', position: 'relative', borderRadius: '10px', overflow: 'hidden' }}>
+    <Box sx={{ bgcolor: '#111823', position: 'relative', borderRadius: '50px 50px 0 0 ', overflow: 'hidden' }}>
       {/* Top decorative line */}
       <Box
         sx={{
@@ -47,10 +47,11 @@ export default function RecentProjects() {
               fontWeight: 700,
               color: '#fff',
               letterSpacing: '0.1em',
-              fontFamily: "'Space Grotesk', sans-serif",
+              fontFamily: 'var(--font-montserrat)',
+              textTransform:"uppercase"
             }}
           >
-            RECENT PROJECTS
+            Proyectos en desarrollo
           </Typography>
           <Link href="/" passHref>
             <Button

@@ -7,8 +7,9 @@ import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
-import RelatedProjects from "./RelatedProjects";
+//import RelatedProjects from "./RelatedProjects";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 import { SiMaterialdesign } from "react-icons/si";
 import {
@@ -294,7 +295,8 @@ const ProjectPage = () => {
           </Box>
         )}
       </Box>
-      <RelatedProjects />
+   {/*    <RelatedProjects /> */}
+      <Footer/>
     </>
   );
 };
