@@ -15,17 +15,24 @@ const Footer = () => {
     >
       <Container maxWidth="xl">
         <Stack
-          direction="row"
+          direction={{ xs: 'column', sm: 'row' }}
           justifyContent="space-between"
           alignItems="center"
+          spacing={2}
         >
           {/* Contact Information */}
-          <Box display="flex" alignItems="center" gap={2}>
+          <Box
+            display="flex"
+            flexDirection={{ xs: 'column', sm: 'row' }}
+            alignItems="center"
+            gap={2}
+          >
             <Avatar
               alt="CM Portfolio"
               src="https://indrasolutions.cl/wp-content/uploads/2025/01/IMG_20250102_114600.jpg"
+              sx={{ width: 56, height: 56 }}
             />
-            <Box>
+            <Box textAlign={{ xs: 'center', sm: 'left' }}>
               <Typography
                 variant="h6"
                 sx={{
@@ -42,7 +49,7 @@ const Footer = () => {
                   fontWeight: 400,
                 }}
               >
-                Email:{" "}
+                Email:{' '}
                 <a
                   href="mailto:cesaramuroc@gmail.com"
                   style={{ color: '#fff', textDecoration: 'none' }}
@@ -50,7 +57,12 @@ const Footer = () => {
                   cesaramuroc@gmail.com
                 </a>
               </Typography>
-              <Stack direction="row" alignItems="center" spacing={1}>
+              <Stack
+                direction="row"
+                alignItems="center"
+                justifyContent={{ xs: 'center', sm: 'start' }}
+                spacing={1}
+              >
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/2560px-Flag_of_Chile.svg.png"
                   alt="Chile Flag"
@@ -63,7 +75,7 @@ const Footer = () => {
                     fontWeight: 400,
                   }}
                 >
-                  Tel:{" "}
+                  Tel:{' '}
                   <a
                     href="tel:+56937761679"
                     style={{ color: '#fff', textDecoration: 'none' }}
@@ -76,7 +88,11 @@ const Footer = () => {
           </Box>
 
           {/* Social Icons */}
-          <Stack direction="row" spacing={2}>
+          <Stack
+            direction="row"
+            justifyContent={{ xs: 'center', sm: 'flex-end' }}
+            spacing={2}
+          >
             <IconButton
               href="https://github.com/Ultralacra"
               target="_blank"
