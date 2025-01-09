@@ -79,16 +79,17 @@ const ProjectPage = () => {
         ></Box>
 
         {/* Botón "Atrás" */}
-        <Button
+         <Button
           variant="outlined"
           onClick={() => router.push("/")}
           sx={{
-            textTransform:"none",
+            textTransform: "none",
             position: "absolute",
             top: "20px",
             left: "20px",
             color: "white",
-            fontWeight: "bold",
+            fontFamily: "var(--font-montserrat)",
+            fontWeight: "500",
             borderRadius: "20px",
             border: "2px solid transparent",
             backgroundColor: "rgba(0, 0, 0, 0.3)",
@@ -103,15 +104,17 @@ const ProjectPage = () => {
         </Button>
 
         {/* Título */}
-        <Typography
+       <Typography
           variant="h2"
           sx={{
             position: "absolute",
             top: "80px",
             left: "20px",
-            fontWeight: "bold",
+            fontWeight: "700", // Grueso
+            fontFamily: "var(--font-montserrat)",
             color: "white",
             zIndex: 2,
+            textTransform:"uppercase"
           }}
         >
           {project.title}
@@ -166,18 +169,36 @@ const ProjectPage = () => {
         >
           {/* Cliente */}
           <Box sx={{ display: "flex", flexDirection: "column", gap: "5px" }}>
-            <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
+            <Typography variant="subtitle1" sx={{
+              fontWeight: "bold",
+                          fontFamily: "var(--font-montserrat)",
+
+
+             }}>
               Cliente:
             </Typography>
-            <Typography variant="body2">{project.client}</Typography>
+            <Typography
+              sx={{
+                              fontFamily: "var(--font-montserrat)",
+
+                }}
+              variant="body2">{project.client}</Typography>
           </Box>
 
           {/* Fecha */}
           <Box sx={{ display: "flex", flexDirection: "column", gap: "5px" }}>
-            <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
+            <Typography variant="subtitle1" sx={{
+              fontWeight: "bold",
+              fontFamily: "var(--font-montserrat)",
+             
+
+             }}>
               Fecha de lanzamiento:
             </Typography>
-            <Typography variant="body2">{project.launchDate}</Typography>
+            <Typography
+            sx={{            fontFamily: "var(--font-montserrat)",
+}}
+              variant="body2">{project.launchDate}</Typography>
           </Box>
         </Box>
       </Box>
@@ -200,6 +221,8 @@ const ProjectPage = () => {
                 variant="body1"
                 sx={{
                   color: index % 2 === 0 ? "text.secondary" : "inherit",
+                              fontFamily: "var(--font-montserrat)",
+
                 }}
               >
                 {paragraph}
@@ -244,6 +267,8 @@ const ProjectPage = () => {
               sx={{
                 fontWeight: "bold",
                 color: "#1a1a1a",
+                            fontFamily: "var(--font-montserrat)",
+
               }}
             >
               Visitar Web
@@ -251,21 +276,18 @@ const ProjectPage = () => {
 
             {/* Botón */}
             <Button
-              variant="contained"
               color="primary"
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
               sx={{
-                textTransform: "none",
-                fontWeight: "bold",
-                borderRadius: "20px",
-                padding: "10px 20px",
-                backgroundColor: "#1976d2",
-                "&:hover": {
-                  backgroundColor: "#1565c0",
-                },
-              }}
+              color: '#fff',
+              borderColor: 'black',
+                borderRadius: '50px',
+              bgcolor:"black",
+              px: 3,
+          
+            }}
             >
               Ir al sitio
             </Button>

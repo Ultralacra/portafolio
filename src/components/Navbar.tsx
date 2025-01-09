@@ -31,6 +31,8 @@ const BlurredAppBar = styled(AppBar)(({ theme }) => ({
 const NavButton = styled(Button)(({ theme }) => ({
   color: "#fff",
   textTransform: "lowercase",
+  fontFamily: "var(--font-montserrat)", // Aplicar Montserrat
+  fontWeight: 400, // Peso ligero
   transition: "color 0.3s ease",
   "&.scrolled": {
     color: "#000",
@@ -75,6 +77,7 @@ export default function Navbar() {
               href="/"
               sx={{
                 fontWeight: 700,
+                fontFamily: "var(--font-montserrat)", // Aplicar Montserrat
                 color: trigger ? "#000" : "#fff",
                 textDecoration: "none",
               }}
@@ -98,12 +101,10 @@ export default function Navbar() {
             </NavButton>
             <NavButton
               href="/path/to/cv.pdf"
-             // target="_blank"
               rel="noopener noreferrer"
               startIcon={<PictureAsPdf />}
               sx={{
                 color: trigger ? "#000" : "#fff",
-
                 whiteSpace: "nowrap", // Evitar salto de línea
               }}
             >

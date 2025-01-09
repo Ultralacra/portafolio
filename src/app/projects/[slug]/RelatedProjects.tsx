@@ -1,6 +1,7 @@
 'use client'
 
 import { Box, Button, Card, CardContent, CardMedia, Grid, Typography } from '@mui/material'
+import Link from 'next/link' // Importar Link para navegación
 
 interface Project {
   title: string
@@ -21,7 +22,7 @@ export default function RecentProjects() {
       title: "L'OCCITANE GREENHOUSE",
       image: "https://indrasolutions.cl/wp-content/uploads/2024/10/Copia-de-FOTO-FEED-1297-X-700.jpg",
     },
-  ] 
+  ]
 
   return (
     <Box sx={{ bgcolor: '#1a1a1a', position: 'relative', borderRadius: '10px', overflow: 'hidden' }}>
@@ -51,21 +52,23 @@ export default function RecentProjects() {
           >
             RECENT PROJECTS
           </Typography>
-          <Button
-            variant="outlined"
-            sx={{
-              color: '#fff',
-              borderColor: '#fff',
-              borderRadius: '50px',
-              px: 3,
-              '&:hover': {
+          <Link href="/" passHref>
+            <Button
+              variant="outlined"
+              sx={{
+                color: '#fff',
                 borderColor: '#fff',
-                bgcolor: 'rgba(255,255,255,0.1)',
-              },
-            }}
-          >
-            ALL CASES
-          </Button>
+                borderRadius: '50px',
+                px: 3,
+                '&:hover': {
+                  borderColor: '#fff',
+                  bgcolor: 'rgba(255,255,255,0.1)',
+                },
+              }}
+            >
+              ALL CASES
+            </Button>
+          </Link>
         </Box>
 
         <Grid container spacing={3} position="relative">
@@ -89,7 +92,7 @@ export default function RecentProjects() {
                     alt={project.title}
                     sx={{
                       height: 400,
-                      borderRadius: '20px', // Changed to only round top corners
+                      borderRadius: '20px',
                     }}
                   />
                   <CardContent sx={{ px: 0 }}>
@@ -108,7 +111,7 @@ export default function RecentProjects() {
                   </CardContent>
                 </Card>
               </Grid>
-              
+
               {/* Vertical divider lines between cards */}
               {index < projects.length - 1 && (
                 <Box
@@ -143,4 +146,3 @@ export default function RecentProjects() {
     </Box>
   )
 }
-

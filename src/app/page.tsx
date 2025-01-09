@@ -16,54 +16,47 @@ const Home = () => {
       <Box
         sx={{
           backgroundColor: "#0F1621",
-          margin:"0px"
+          margin: "0px",
         }}
-        >
-
-          <Navbar />
-      <Container
-
-        maxWidth="xl">
-        <Box mt={6} sx={{ marginTop: "60px", padding: 2 }}>
-            <Typography 
+      >
+        <Navbar />
+        <Container maxWidth="xl">
+          <Box mt={6} sx={{ marginTop: "60px", padding: 2 }}>
+            <Typography
               color="#D6DBE4"
-            mb={12}
-            variant="h4" 
-            align="left" 
-            fontSize="6vw"
-            gutterBottom 
-           
-          >
-         Realizados por mi...
-          </Typography>
-          <Grid
-            container
-            spacing={4}
-           
-          >
-            {projects.map((project) => (
-              <Grid
-                item
-                key={project.slug}
-                xs={12}
-                md={4}
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                <ProjectCard {...project} />
-              </Grid>
-            ))}
-          </Grid>
-        </Box>
-      </Container>
-    
+              mb={12}
+              variant="h4"
+              align="left"
+              fontSize="6vw"
+              gutterBottom
+              sx={{
+                fontFamily: "var(--font-montserrat)",
+                fontWeight: 900, // Peso más grueso
+              }}
+            >
+              Realizados por mi...
+            </Typography>
+            <Grid container spacing={4}>
+              {projects.map((project) => (
+                <Grid
+                  item
+                  key={project.slug}
+                  xs={12}
+                  md={4}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  <ProjectCard {...project} />
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </Container>
       </Box>
       <Footer />
     </>
-
-
   );
 };
 

@@ -17,7 +17,7 @@ import {
   SiTailwindcss,
   SiWordpress,
 } from "react-icons/si";
-import { FaElementor, FaFigma  } from "react-icons/fa";
+import { FaElementor, FaFigma } from "react-icons/fa";
 import { SiMaterialdesign } from "react-icons/si"; // Corrección para Material UI
 
 interface ProjectCardProps {
@@ -35,12 +35,11 @@ const techIcons: { [key: string]: React.ReactNode } = {
   Photoshop: <SiAdobephotoshop size={24} color="#fff" />,
   PostgreSQL: <SiPostgresql size={24} color="#fff" />,
   "Next.js": <SiNextdotjs size={24} color="#fff" />,
-  "Material UI": <SiMaterialdesign size={24} color="#fff" />, // Usar SiMaterialdesign para Material UI
+  "Material UI": <SiMaterialdesign size={24} color="#fff" />,
   "Tailwind CSS": <SiTailwindcss size={24} color="#fff" />,
   WordPress: <SiWordpress size={24} color="#fff" />,
   Elementor: <FaElementor size={24} color="#fff" />,
-    Figma: <FaFigma size={24} color="#fff" />, // Ícono de Figma añadido
-
+  Figma: <FaFigma size={24} color="#fff" />,
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -52,9 +51,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <Box
       sx={{
-        border: "1px solid #19202C", // Color del borde ajustado
+        border: "1px solid #19202C",
         position: "relative",
-        padding: "15px", // Padding aumentado a 15px
+        padding: "15px",
         borderRadius: "8px",
       }}
     >
@@ -69,7 +68,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           color: "#fff",
           padding: "4px 8px",
           fontSize: "1rem",
-          fontWeight: "bold",
+          fontFamily: "var(--font-montserrat)", // Tipografía Montserrat
+          fontWeight: 500, // Menor peso (Medium)
         }}
       >
         {title}
@@ -105,18 +105,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <CardActions
             sx={{
               display: "flex",
-              flexDirection: "column", // Cambia la dirección a columna para apilar elementos
-              alignItems: "flex-start", // Alinea todo al inicio (izquierda)
+              flexDirection: "column",
+              alignItems: "flex-start",
               p: 3,
               pt: 0,
-              gap: 1.5, // Espaciado entre íconos y el botón
+              gap: 1.5,
             }}
           >
             {/* Íconos de las tecnologías */}
             <Box
               sx={{
                 display: "flex",
-                gap: 1, // Espacio reducido entre los íconos
+                gap: 1,
               }}
             >
               {technologies.map((tech, index) => (

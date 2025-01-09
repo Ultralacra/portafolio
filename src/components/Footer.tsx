@@ -22,18 +22,51 @@ const Footer = () => {
         >
           {/* Contact Information */}
           <Box display="flex" alignItems="center" gap={2}>
-            <Avatar alt="CM Portfolio" src="https://indrasolutions.cl/wp-content/uploads/2025/01/IMG_20250102_114600.jpg" />
+            <Avatar
+              alt="CM Portfolio"
+              src="https://indrasolutions.cl/wp-content/uploads/2025/01/IMG_20250102_114600.jpg"
+            />
             <Box>
-              <Typography variant="h6" sx={{ fontWeight: 700 }}>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: 700,
+                  fontFamily: 'var(--font-montserrat)',
+                }}
+              >
                 CM Portfolio
               </Typography>
-              <Typography variant="body2">
-                Email: <a href="mailto:cesaramuroc@gmail.com" style={{ color: '#fff', textDecoration: 'none' }}>cesaramuroc@gmail.com</a>
+              <Typography
+                variant="body2"
+                sx={{
+                  fontFamily: 'var(--font-montserrat)',
+                  fontWeight: 400,
+                }}
+              >
+                Email:{" "}
+                <a
+                  href="mailto:cesaramuroc@gmail.com"
+                  style={{ color: '#fff', textDecoration: 'none' }}
+                >
+                  cesaramuroc@gmail.com
+                </a>
               </Typography>
               <Stack direction="row" alignItems="center" spacing={1}>
                 <Flag sx={{ color: '#fff' }} />
-                <Typography variant="body2">
-                  Tel: <a href="tel:+56937761679" style={{ color: '#fff', textDecoration: 'none' }}>+56 9 37761679</a>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    fontFamily: 'var(--font-montserrat)',
+                    fontWeight: 400,
+                  }}
+                >
+                  Tel:{" "}
+                  <a
+                    href="tel:+56937761679"
+                    style={{ color: '#fff', textDecoration: 'none' }}
+                  >
+                    +56 9 37761679
+                  </a>
                 </Typography>
               </Stack>
             </Box>
@@ -77,7 +110,13 @@ const Footer = () => {
         <Typography
           variant="body2"
           align="center"
-          sx={{ marginTop: '20px', fontSize: '0.875rem', color: '#fff' }}
+          sx={{
+            marginTop: '20px',
+            fontSize: '0.875rem',
+            color: '#fff',
+            fontFamily: 'var(--font-montserrat)',
+            fontWeight: 400,
+          }}
         >
           Santiago, Región Metropolitana
         </Typography>
@@ -85,7 +124,12 @@ const Footer = () => {
         <Typography
           variant="body2"
           align="center"
-          sx={{ fontSize: '0.875rem', color: '#fff' }}
+          sx={{
+            fontSize: '0.875rem',
+            color: '#fff',
+            fontFamily: 'var(--font-montserrat)',
+            fontWeight: 400,
+          }}
         >
           &copy; 2025 CM Portfolio.
         </Typography>
