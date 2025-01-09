@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Container, Typography, IconButton, Stack, Avatar } from '@mui/material';
 import { GitHub, LinkedIn, WhatsApp, Email } from '@mui/icons-material';
-import { Flag } from '@mui/icons-material';
 
 const Footer = () => {
   return (
@@ -52,7 +51,11 @@ const Footer = () => {
                 </a>
               </Typography>
               <Stack direction="row" alignItems="center" spacing={1}>
-                <Flag sx={{ color: '#fff' }} />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/2560px-Flag_of_Chile.svg.png"
+                  alt="Chile Flag"
+                  style={{ width: '20px', height: '15px', objectFit: 'cover' }}
+                />
                 <Typography
                   variant="body2"
                   sx={{
@@ -75,7 +78,7 @@ const Footer = () => {
           {/* Social Icons */}
           <Stack direction="row" spacing={2}>
             <IconButton
-              href="https://github.com"
+              href="https://github.com/Ultralacra"
               target="_blank"
               rel="noopener noreferrer"
               sx={{ color: '#fff' }}
@@ -83,7 +86,7 @@ const Footer = () => {
               <GitHub />
             </IconButton>
             <IconButton
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/c%C3%A9sar-muro-3b40a5159/"
               target="_blank"
               rel="noopener noreferrer"
               sx={{ color: '#fff' }}
@@ -91,7 +94,7 @@ const Footer = () => {
               <LinkedIn />
             </IconButton>
             <IconButton
-              href="https://wa.me"
+              href="https://wa.me/56937761679?text=¡Hola!%20Estoy%20interesado%20en%20conocer%20más%20sobre%20tu%20trabajo."
               target="_blank"
               rel="noopener noreferrer"
               sx={{ color: '#fff' }}
