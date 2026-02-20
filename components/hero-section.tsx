@@ -1,6 +1,15 @@
 "use client";
 
-import { ArrowDown, Github, MapPin, Download, Mail, FileText, FileDown, ChevronDown } from "lucide-react";
+import {
+  ArrowDown,
+  Github,
+  MapPin,
+  Download,
+  Mail,
+  FileText,
+  FileDown,
+  ChevronDown,
+} from "lucide-react";
 import { useI18n } from "@/lib/i18n/provider";
 import { useEffect, useState, useRef } from "react";
 import { ParallaxLayer } from "./parallax";
@@ -183,7 +192,9 @@ export function HeroSection() {
               >
                 <Download className="h-4 w-4" />
                 {t.hero.downloadCV}
-                <ChevronDown className={`h-3.5 w-3.5 transition-transform ${cvOpen ? "rotate-180" : ""}`} />
+                <ChevronDown
+                  className={`h-3.5 w-3.5 transition-transform ${cvOpen ? "rotate-180" : ""}`}
+                />
               </button>
               {cvOpen && (
                 <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-48 rounded-xl border border-border bg-background/95 backdrop-blur-md shadow-xl z-50 overflow-hidden animate-fade-in-up">
