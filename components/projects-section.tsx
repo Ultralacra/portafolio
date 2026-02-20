@@ -12,6 +12,8 @@ import Image from "next/image";
 import { ScrollReveal, StaggerChildren } from "./scroll-reveal";
 import { TiltCard } from "./tilt-card";
 import { useI18n } from "@/lib/i18n/provider";
+import { TextReveal } from "./text-reveal";
+import { CursorSpotlight } from "./cursor-spotlight";
 
 type Project = {
   name: string;
@@ -322,77 +324,77 @@ function ProjectCard({ project, t }: { project: Project; t: any }) {
     project.descriptionKey;
   return (
     <TiltCard className="stagger-item h-full">
-    <article className="card-glow group flex h-full flex-col rounded-xl border border-border bg-card p-5 transition-all duration-300 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5">
-      {/* Header: logo + title + links aligned at top */}
-      <div className="mb-3 flex items-center gap-3">
-        {project.logo ? (
-          <div className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-white p-2">
-            <Image
-              src={project.logo}
-              alt={`Logo de ${project.name}`}
-              width={56}
-              height={56}
-              className="h-full w-full object-contain"
-            />
-          </div>
-        ) : (
-          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-lg bg-primary/10">
-            <Globe className="h-6 w-6 text-primary" />
-          </div>
-        )}
-        <div className="min-w-0 flex-1">
-          <h3 className="truncate text-base font-semibold text-card-foreground">
-            {project.name}
-          </h3>
-        </div>
-        <div className="flex shrink-0 gap-1.5">
-          {project.githubUrl && (
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-8 w-8 items-center justify-center rounded-md border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
-              aria-label={t.projects.viewOnGithub.replace(
-                "{name}",
-                project.name,
-              )}
-            >
-              <Github className="h-4 w-4" />
-            </a>
+      <article className="card-glow group flex h-full flex-col rounded-xl border border-border bg-card p-5 transition-all duration-300 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5">
+        {/* Header: logo + title + links aligned at top */}
+        <div className="mb-3 flex items-center gap-3">
+          {project.logo ? (
+            <div className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-white p-2">
+              <Image
+                src={project.logo}
+                alt={`Logo de ${project.name}`}
+                width={56}
+                height={56}
+                className="h-full w-full object-contain"
+              />
+            </div>
+          ) : (
+            <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+              <Globe className="h-6 w-6 text-primary" />
+            </div>
           )}
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-8 w-8 items-center justify-center rounded-md border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
-              aria-label={t.projects.viewLive.replace("{name}", project.name)}
-            >
-              <ExternalLink className="h-4 w-4" />
-            </a>
-          )}
+          <div className="min-w-0 flex-1">
+            <h3 className="truncate text-base font-semibold text-card-foreground">
+              {project.name}
+            </h3>
+          </div>
+          <div className="flex shrink-0 gap-1.5">
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-8 w-8 items-center justify-center rounded-md border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+                aria-label={t.projects.viewOnGithub.replace(
+                  "{name}",
+                  project.name,
+                )}
+              >
+                <Github className="h-4 w-4" />
+              </a>
+            )}
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-8 w-8 items-center justify-center rounded-md border border-border text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+                aria-label={t.projects.viewLive.replace("{name}", project.name)}
+              >
+                <ExternalLink className="h-4 w-4" />
+              </a>
+            )}
+          </div>
         </div>
-      </div>
 
-      <p className="mb-4 flex-1 text-sm leading-relaxed text-muted-foreground">
-        {description}
-      </p>
+        <p className="mb-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+          {description}
+        </p>
 
-      <div className="mb-3">
-        <LanguageBar languages={project.languages} />
-      </div>
+        <div className="mb-3">
+          <LanguageBar languages={project.languages} />
+        </div>
 
-      <div className="flex flex-wrap gap-1.5">
-        {project.techStack.map((tech) => (
-          <span
-            key={tech}
-            className="rounded-full bg-primary/10 px-2.5 py-0.5 font-mono text-[11px] text-primary"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
-    </article>
+        <div className="flex flex-wrap gap-1.5">
+          {project.techStack.map((tech) => (
+            <span
+              key={tech}
+              className="rounded-full bg-primary/10 px-2.5 py-0.5 font-mono text-[11px] text-primary"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </article>
     </TiltCard>
   );
 }
@@ -401,7 +403,8 @@ export function ProjectsSection() {
   const { t } = useI18n();
 
   return (
-    <section id="projects" className="px-6 py-24">
+    <section id="projects" className="relative px-6 py-24 overflow-hidden">
+      <CursorSpotlight />
       <div className="mx-auto max-w-5xl">
         <ScrollReveal>
           <div className="mb-16">
@@ -409,7 +412,7 @@ export function ProjectsSection() {
               {t.projects.label}
             </p>
             <h2 className="mb-6 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              <span className="text-balance">{t.projects.title}</span>
+              <TextReveal text={t.projects.title} as="span" staggerMs={60} />
             </h2>
             <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
               {t.projects.description}

@@ -3,6 +3,9 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import { ScrollReveal, StaggerChildren } from "./scroll-reveal";
 import { useI18n } from "@/lib/i18n/provider";
+import { TextReveal } from "./text-reveal";
+import { CursorSpotlight } from "./cursor-spotlight";
+import { ParallaxLayer } from "./parallax";
 
 const skillData = [
   {
@@ -45,7 +48,13 @@ const skillData = [
   },
 ];
 
-function AnimatedCounter({ target, duration = 1200 }: { target: number; duration?: number }) {
+function AnimatedCounter({
+  target,
+  duration = 1200,
+}: {
+  target: number;
+  duration?: number;
+}) {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
   const hasAnimated = useRef(false);
@@ -81,7 +90,10 @@ function AnimatedCounter({ target, duration = 1200 }: { target: number; duration
   }, [target, duration]);
 
   return (
-    <span ref={ref} className="font-mono text-xs tabular-nums text-muted-foreground">
+    <span
+      ref={ref}
+      className="font-mono text-xs tabular-nums text-muted-foreground"
+    >
       {count}%
     </span>
   );
@@ -116,10 +128,15 @@ export function SkillsSection() {
 
   return (
     <section id="skills" className="px-6 py-24 relative overflow-hidden">
+      <CursorSpotlight />
       {/* Background decoration */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="animate-blob-delay-2 absolute top-20 -right-20 h-64 w-64 rounded-full bg-primary/3 blur-3xl" />
-        <div className="animate-blob-delay-4 absolute bottom-20 -left-20 h-48 w-48 rounded-full bg-primary/3 blur-3xl" />
+        <ParallaxLayer speed={0.2}>
+          <div className="animate-blob-delay-2 absolute top-20 -right-20 h-64 w-64 rounded-full bg-primary/3 blur-3xl" />
+        </ParallaxLayer>
+        <ParallaxLayer speed={0.3}>
+          <div className="animate-blob-delay-4 absolute bottom-20 -left-20 h-48 w-48 rounded-full bg-primary/3 blur-3xl" />
+        </ParallaxLayer>
       </div>
 
       <div className="mx-auto max-w-5xl relative">
@@ -129,7 +146,7 @@ export function SkillsSection() {
               {t.skills.label}
             </p>
             <h2 className="mb-6 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              <span className="text-balance">{t.skills.title}</span>
+              <TextReveal text={t.skills.title} as="span" staggerMs={60} />
             </h2>
             <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
               {t.skills.description}

@@ -12,34 +12,36 @@ export const en = {
     role: "Full Stack Developer",
     greeting: "Hi, I'm ",
     description:
-      "Venezuelan developer with 6 years of experience, based in Santiago. I build modern web apps with TypeScript, Next.js, PostgreSQL and WordPress — from e-commerce to dashboards, all in production.",
+      "6+ years turning ideas into production-ready digital products. Specialized in TypeScript, Next.js, PostgreSQL and WordPress — I've shipped 15+ projects including e-commerce platforms, dashboards, SaaS tools and custom solutions for startups and businesses.",
     location: "Santiago, Chile",
     viewProjects: "View projects",
     downloadCV: "Download CV",
-    profileAlt: "Cesar's profile photo",
+    downloadHTML: "Download HTML",
+    downloadPDF: "Save as PDF",
+    profileAlt: "César's profile photo",
   },
 
   // About
   about: {
     label: "About me",
-    title: "Building digital solutions with clean code",
+    title: "Clean code, deliveries that drive impact",
     description:
-      "Venezuelan full stack developer with 6 years of experience, based in Santiago, Chile. With over 15 projects in production, I work with TypeScript, Next.js, Material UI, PostgreSQL and the WordPress ecosystem. I've built e-commerce with payment integrations (Transbank, Mercado Pago), educational platforms, hotel booking systems, admin dashboards, WordPress sites and custom plugins. Focused on clean code, fast delivery and solutions that make a real impact.",
+      "I'm a full stack developer with 6+ years of experience and 15+ projects in production. I work with TypeScript, Next.js, React, Node.js, PostgreSQL and the WordPress ecosystem to design and build end-to-end solutions: from e-commerce with payment integrations (Transbank, Mercado Pago) to educational platforms, booking systems and internal management dashboards. My approach combines scalable architecture, maintainable code and on-time delivery — always prioritizing the product's business value.",
     highlights: {
       frontend: {
         title: "Frontend",
         description:
-          "Modern interfaces with React, Next.js and TypeScript. Focus on performance and user experience.",
+          "High-performance interfaces with React, Next.js and TypeScript. Responsive, accessible design optimized for conversion.",
       },
       backend: {
         title: "Backend",
         description:
-          "Robust APIs with Node.js and PostgreSQL databases. Optimized queries and clean architecture.",
+          "Scalable REST APIs with Node.js and PostgreSQL. Efficient data modeling, optimized queries and clean architecture.",
       },
       fullstack: {
         title: "Full Stack",
         description:
-          "End-to-end application development, from database design to deployment on Vercel.",
+          "End-to-end development: from database modeling and API design to Vercel deployment with CI/CD.",
       },
     },
   },
@@ -47,34 +49,34 @@ export const en = {
   // Projects
   projects: {
     label: "Projects",
-    title: "What I've built",
+    title: "Projects in production",
     description:
-      "Personal and client projects: e-commerce with Next.js and payment integrations (Transbank, Mercado Pago), full-stack applications, WordPress sites with custom plugins. All in production.",
+      "A curated selection of real-world projects for clients and personal ventures: e-commerce with payment gateways, full-stack applications, WordPress sites with custom plugins. All live in production.",
     categoryNextjs: "E-commerce & Next.js",
     categoryFullstack: "Full-stack Applications",
     categoryWordpress: "WordPress",
     pluginsTitle: "Custom WordPress Plugins",
     pluginsDescription:
-      "Development of custom WordPress plugins, tailored to each client's specific needs: external API integrations, advanced WooCommerce features, automation and more.",
+      "Purpose-built plugins that solve specific business needs: external API integrations, advanced WooCommerce workflows, process automation and core functionality extensions.",
     viewOnGithub: "View {name} on GitHub",
     viewLive: "View {name} live",
     items: {
-      animalaria: "Full e-commerce for an animal illustration store. Product catalog, shopping cart, payment integration with Transbank and Mercado Pago, and order management. Built with Next.js and Material UI.",
-      stickys: "Online store for phone accessories. Product catalog with variants, shipping, payments integrated with Transbank and Mercado Pago, and responsive design focused on conversion.",
-      indraSolutions: "Corporate website for a tech solutions company. Modern design with Next.js, focused on performance and SEO.",
-      myhDashboard: "Admin panel for a moving company. Dashboard with service, client and internal operations management.",
-      myhCotizador: "Web application to quote moving services. Intuitive interface that allows users to get quick and accurate estimates.",
-      santiagoAdicto: "Full-stack platform to discover Santiago, Chile. Guide of places, activities and experiences with a modern, SEO-optimized interface.",
-      academiaPlataforma: "Complete educational platform with course management, user authentication, admin panel and continuous deployment on Vercel.",
-      chileAdictoHoteles: "Modern and responsive frontend for the Chile Adicto hotel platform. Interface focused on search and booking experience.",
-      profesionesVzla: "Web directory of professions and trades in Venezuela. Search, filter and explore professional services with an intuitive interface.",
-      bettingApp: "Sports betting application with interactive interface, PostgreSQL database and real-time features.",
-      euclides: "Professional website built with WordPress. Custom design, optimized for SEO and performance.",
-      altoDominicos: "Real estate/commercial website built with WordPress. Attractive interface and dynamic content management.",
-      waw: "Corporate website built with WordPress. Modern design with custom plugins and customizations.",
-      navegue: "Web platform built with WordPress. Custom features and user-centered design.",
-      klaims: "International corporate website built with WordPress. Optimized for multiple languages and high performance.",
-      justecorp: "Business website built with WordPress. Professional design with advanced integrations and customizations.",
+      animalaria: "Illustration e-commerce with catalog, cart, order management and dual payment gateway (Transbank + Mercado Pago). Stack: Next.js, Material UI, TypeScript.",
+      stickys: "Phone accessories store with product variants, integrated shipping and checkout via Transbank and Mercado Pago. Conversion-focused responsive design.",
+      indraSolutions: "Corporate site for a tech solutions company. Next.js architecture with SSR, Lighthouse score 90+ and SEO-optimized structure.",
+      myhDashboard: "Admin dashboard for a moving company. Service, client and internal operations management with roles and permissions.",
+      myhCotizador: "Web quotation tool for instant moving estimates. Dynamic calculation logic with an intuitive user interface.",
+      santiagoAdicto: "Full-stack urban tourism platform for Santiago. Places, activities and experiences guide with SSR and SEO optimized for organic ranking.",
+      academiaPlataforma: "Educational platform with course management, user authentication, admin panel and continuous deployment pipeline on Vercel.",
+      chileAdictoHoteles: "Frontend for the Chile Adicto hotel platform. Search and booking experience with modern design and optimized performance.",
+      profesionesVzla: "Professional directory for Venezuela with search, advanced filters and detailed profiles. Accessible and fast interface.",
+      bettingApp: "Sports betting app with real-time data, PostgreSQL database and complex business logic.",
+      euclides: "Professional WordPress site with custom design, on-page SEO optimization and sub-second load times.",
+      altoDominicos: "Real estate/commercial WordPress portal with dynamic content management and lead-generation focused design.",
+      waw: "Corporate WordPress site with custom plugins, third-party integrations and brand-aligned design.",
+      navegue: "WordPress web platform with custom functionality and user experience centered on simplicity.",
+      klaims: "International corporate WordPress site. Multi-language support, high performance and optimization for global markets.",
+      justecorp: "Business WordPress website with advanced integrations, professional design and scalable content architecture.",
     },
   },
 
@@ -83,7 +85,7 @@ export const en = {
     label: "Skills",
     title: "Tech stack",
     description:
-      "The technologies and tools I work with daily to build modern web applications.",
+      "Technologies and tools I use daily to design, build and deploy production-grade web applications.",
     categories: {
       languages: "Languages",
       frameworks: "Frameworks & Libraries",
@@ -98,9 +100,9 @@ export const en = {
   // Contact
   contact: {
     label: "Contact",
-    title: "Let's talk",
+    title: "Let's work together",
     description:
-      "If you want to discuss a project or just say hello, feel free to reach out.",
+      "Have a project in mind or looking for a developer to join your team? Reach out and let's discuss how I can add value.",
     location: "Location",
   },
 
@@ -109,14 +111,14 @@ export const en = {
     sendMessage: "Send message",
     messageTo: "Your message will go directly to cesaramuroc@gmail.com",
     messageSent: "Message sent!",
-    thankYou: "Thanks for reaching out, I'll get back to you soon.",
+    thankYou: "Thanks for reaching out. I'll get back to you shortly.",
     close: "Close",
     name: "Name",
-    namePlaceholder: "Your name",
+    namePlaceholder: "Your full name",
     email: "Email",
     emailPlaceholder: "you@email.com",
     message: "Message",
-    messagePlaceholder: "Tell me about your project...",
+    messagePlaceholder: "Tell me about your project or opportunity...",
     sending: "Sending...",
     send: "Send message",
   },
@@ -124,11 +126,11 @@ export const en = {
   // Floating buttons
   floating: {
     whatsappMessage:
-      "Hi Cesar! I saw your portfolio and I'd like to get in touch.",
+      "Hi César, I saw your portfolio and I'd like to discuss an opportunity.",
   },
 
   // Footer
   footer: {
-    builtWith: "Built with Next.js, Tailwind CSS and deployed on Vercel",
+    builtWith: "Designed and developed with Next.js, Tailwind CSS — deployed on Vercel",
   },
 } as const;

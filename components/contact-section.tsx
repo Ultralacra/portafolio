@@ -5,6 +5,8 @@ import { Github, Mail, ArrowUpRight, MapPin } from "lucide-react";
 import { ContactModal } from "./contact-modal";
 import { ScrollReveal, StaggerChildren } from "./scroll-reveal";
 import { useI18n } from "@/lib/i18n/provider";
+import { TextReveal } from "./text-reveal";
+import { CursorSpotlight } from "./cursor-spotlight";
 
 export function ContactSection() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -26,7 +28,8 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="px-6 py-24">
+    <section id="contact" className="relative px-6 py-24 overflow-hidden">
+      <CursorSpotlight />
       <div className="mx-auto max-w-5xl">
         <ScrollReveal>
           <div className="mb-16">
@@ -34,7 +37,7 @@ export function ContactSection() {
               {t.contact.label}
             </p>
             <h2 className="mb-6 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              <span className="text-balance">{t.contact.title}</span>
+              <TextReveal text={t.contact.title} as="span" staggerMs={80} />
             </h2>
             <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
               {t.contact.description}

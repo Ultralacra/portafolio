@@ -3,6 +3,8 @@
 import { Code2, Database, Globe } from "lucide-react";
 import { ScrollReveal, StaggerChildren } from "./scroll-reveal";
 import { useI18n } from "@/lib/i18n/provider";
+import { CursorSpotlight } from "./cursor-spotlight";
+import { TextReveal } from "./text-reveal";
 
 export function AboutSection() {
   const { t } = useI18n();
@@ -26,7 +28,8 @@ export function AboutSection() {
   ];
 
   return (
-    <section id="about" className="px-6 py-24">
+    <section id="about" className="relative px-6 py-24 overflow-hidden">
+      <CursorSpotlight />
       <div className="mx-auto max-w-5xl">
         <ScrollReveal>
           <div className="mb-16">
@@ -34,7 +37,7 @@ export function AboutSection() {
               {t.about.label}
             </p>
             <h2 className="mb-6 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              <span className="text-balance">{t.about.title}</span>
+              <TextReveal text={t.about.title} as="span" staggerMs={60} />
             </h2>
             <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
               {t.about.description}

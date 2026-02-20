@@ -399,3 +399,67 @@ html {
 .underline-grow:hover::after {
   width: 100%;
 }
+
+/* ─── Word reveal animation (TextReveal component) ────────── */
+.word-reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  filter: blur(4px);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.word-reveal.word-revealed {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/* ─── Section divider animated glow sweep ─────────────────── */
+@keyframes divider-glow {
+  0% { left: -40%; opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { left: 140%; opacity: 0; }
+}
+
+.section-divider-glow {
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsl(var(--primary) / 0.6),
+    transparent
+  );
+  animation: divider-glow 4s ease-in-out infinite;
+  position: absolute;
+  top: 0;
+}
+
+/* ─── Smooth scale on hover for floating buttons ──────────── */
+@keyframes subtle-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.animate-breathe {
+  animation: subtle-breathe 3s ease-in-out infinite;
+}
+
+/* ─── Section fade-in with scale (for whole sections) ─────── */
+@keyframes section-enter {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.section-enter {
+  animation: section-enter 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

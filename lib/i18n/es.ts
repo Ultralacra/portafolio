@@ -1,7 +1,7 @@
 export const es = {
   // Navbar
   nav: {
-    about: "Sobre mi",
+    about: "Sobre mí",
     projects: "Proyectos",
     skills: "Habilidades",
     contact: "Contacto",
@@ -12,34 +12,36 @@ export const es = {
     role: "Desarrollador Full Stack",
     greeting: "Hola, soy ",
     description:
-      "Desarrollador venezolano con 6 anos de experiencia, radicado en Santiago. Construyo aplicaciones web modernas con TypeScript, Next.js, PostgreSQL y WordPress — desde e-commerce hasta dashboards, todo en produccion.",
+      "Más de 6 años transformando ideas en productos digitales. Especializado en TypeScript, Next.js, PostgreSQL y WordPress, he llevado +15 proyectos a producción — e-commerce, dashboards, plataformas SaaS y soluciones a medida para startups y empresas.",
     location: "Santiago, Chile",
     viewProjects: "Ver proyectos",
     downloadCV: "Descargar CV",
-    profileAlt: "Foto de perfil de Cesar",
+    downloadHTML: "Descargar HTML",
+    downloadPDF: "Guardar como PDF",
+    profileAlt: "Foto de perfil de César",
   },
 
   // About
   about: {
-    label: "Sobre mi",
-    title: "Construyendo soluciones digitales con codigo limpio",
+    label: "Sobre mí",
+    title: "Código limpio, entregas que generan impacto",
     description:
-      "Desarrollador full stack venezolano con 6 anos de experiencia, radicado en Santiago, Chile. Con mas de 15 proyectos en produccion, trabajo con TypeScript, Next.js, Material UI, PostgreSQL y el ecosistema WordPress. He construido e-commerce con integraciones de pago (Transbank, Mercado Pago), plataformas educativas, sistemas de reservas hoteleras, dashboards administrativos, sitios WordPress y plugins a medida. Enfocado en codigo limpio, entregas rapidas y soluciones que generan impacto real.",
+      "Soy un desarrollador full stack con +6 años de experiencia y +15 proyectos en producción. Trabajo con TypeScript, Next.js, React, Node.js, PostgreSQL y el ecosistema WordPress para diseñar y construir soluciones end-to-end: desde e-commerce con integraciones de pago (Transbank, Mercado Pago) hasta plataformas educativas, sistemas de reservas y dashboards de gestión interna. Mi enfoque combina arquitectura escalable, código mantenible y entregas dentro de plazo — siempre priorizando el valor de negocio del producto.",
     highlights: {
       frontend: {
         title: "Frontend",
         description:
-          "Interfaces modernas con React, Next.js y TypeScript. Foco en rendimiento y experiencia de usuario.",
+          "Interfaces de alto rendimiento con React, Next.js y TypeScript. Diseño responsivo, accesible y optimizado para conversión.",
       },
       backend: {
         title: "Backend",
         description:
-          "APIs robustas con Node.js y bases de datos PostgreSQL. Consultas optimizadas y arquitectura limpia.",
+          "APIs REST escalables con Node.js y PostgreSQL. Modelado de datos eficiente, consultas optimizadas y arquitectura limpia.",
       },
       fullstack: {
         title: "Full Stack",
         description:
-          "Desarrollo completo de aplicaciones, desde el diseno de la base de datos hasta el despliegue en Vercel.",
+          "Desarrollo integral: desde el modelado de base de datos y diseño de API hasta el deploy en Vercel con CI/CD.",
       },
     },
   },
@@ -47,46 +49,46 @@ export const es = {
   // Projects
   projects: {
     label: "Proyectos",
-    title: "Lo que he construido",
+    title: "Proyectos en producción",
     description:
-      "Proyectos propios y para clientes: e-commerce con Next.js e integraciones de pago (Transbank, Mercado Pago), aplicaciones full-stack, sitios WordPress con plugins a medida. Todos en produccion.",
+      "Una selección de proyectos reales para clientes y propios: e-commerce con pasarelas de pago, aplicaciones full-stack, plataformas WordPress con plugins a medida. Todos operando en producción.",
     categoryNextjs: "E-commerce & Next.js",
     categoryFullstack: "Aplicaciones Full-stack",
     categoryWordpress: "WordPress",
     pluginsTitle: "Plugins WordPress a medida",
     pluginsDescription:
-      "Desarrollo de plugins personalizados para WordPress, adaptados a las necesidades especificas de cada cliente: integraciones con APIs externas, funcionalidades avanzadas de WooCommerce, automatizaciones y mas.",
+      "Plugins personalizados que resuelven necesidades específicas de negocio: integraciones con APIs externas, flujos avanzados de WooCommerce, automatizaciones de procesos y extensiones de funcionalidad core.",
     viewOnGithub: "Ver {name} en GitHub",
     viewLive: "Ver {name} en vivo",
     items: {
-      animalaria: "E-commerce completo para una tienda de ilustraciones de animales. Catalogo de productos, carrito de compras, integracion de pagos con Transbank y Mercado Pago, y gestion de pedidos. Construido con Next.js y Material UI.",
-      stickys: "Tienda online para accesorios de celular. Catalogo de productos con variantes, despacho, pagos integrados con Transbank y Mercado Pago, y diseno responsivo enfocado en conversion.",
-      indraSolutions: "Sitio web corporativo para empresa de soluciones tecnologicas. Diseno moderno con Next.js, enfocado en rendimiento y SEO.",
-      myhDashboard: "Panel de administracion para empresa de mudanzas. Dashboard con gestion de servicios, clientes y operaciones internas.",
-      myhCotizador: "Aplicacion web para cotizar servicios de mudanza. Interfaz intuitiva que permite a los usuarios obtener presupuestos rapidos y precisos.",
-      santiagoAdicto: "Plataforma full-stack para descubrir Santiago de Chile. Guia de lugares, actividades y experiencias con interfaz moderna y optimizada para SEO.",
-      academiaPlataforma: "Plataforma educativa completa con gestion de cursos, autenticacion de usuarios, panel de administracion y despliegue continuo en Vercel.",
-      chileAdictoHoteles: "Frontend moderno y responsivo para la plataforma de hoteles Chile Adicto. Interfaz enfocada en la experiencia de busqueda y reservas.",
-      profesionesVzla: "Directorio web de profesiones y oficios en Venezuela. Permite buscar, filtrar y explorar servicios profesionales con una interfaz intuitiva.",
-      bettingApp: "Aplicacion de apuestas deportivas con interfaz interactiva, base de datos PostgreSQL y funcionalidades en tiempo real.",
-      euclides: "Sitio web profesional desarrollado con WordPress. Diseno personalizado, optimizado para SEO y rendimiento.",
-      altoDominicos: "Sitio web inmobiliario/comercial desarrollado con WordPress. Interfaz atractiva y gestion de contenido dinamica.",
-      waw: "Sitio web corporativo desarrollado con WordPress. Diseno moderno con plugins y personalizaciones a medida.",
-      navegue: "Plataforma web desarrollada con WordPress. Funcionalidades personalizadas y diseno centrado en el usuario.",
-      klaims: "Sitio web corporativo internacional desarrollado con WordPress. Optimizado para multiples idiomas y alta performance.",
-      justecorp: "Sitio web empresarial desarrollado con WordPress. Diseno profesional con integraciones y personalizaciones avanzadas.",
+      animalaria: "E-commerce de ilustraciones con catálogo, carrito, gestión de pedidos y doble pasarela de pago (Transbank + Mercado Pago). Stack: Next.js, Material UI, TypeScript.",
+      stickys: "Tienda online de accesorios para celular con variantes de producto, despacho integrado y checkout con Transbank y Mercado Pago. Diseño responsivo orientado a conversión.",
+      indraSolutions: "Sitio corporativo para empresa de soluciones tecnológicas. Arquitectura Next.js con SSR, rendimiento Lighthouse +90 y estructura SEO optimizada.",
+      myhDashboard: "Dashboard administrativo para empresa de mudanzas. Gestión de servicios, clientes y operaciones internas con roles y permisos.",
+      myhCotizador: "Cotizador web que permite a usuarios obtener presupuestos instantáneos de mudanza. Lógica de cálculo dinámica e interfaz intuitiva.",
+      santiagoAdicto: "Plataforma full-stack de turismo urbano en Santiago. Guía de lugares, actividades y experiencias con SSR y SEO optimizado para posicionamiento orgánico.",
+      academiaPlataforma: "Plataforma educativa con gestión de cursos, autenticación de usuarios, panel admin y pipeline de deploy continuo en Vercel.",
+      chileAdictoHoteles: "Frontend de la plataforma hotelera Chile Adicto. Experiencia de búsqueda y reservas con diseño moderno y rendimiento optimizado.",
+      profesionesVzla: "Directorio de profesiones en Venezuela con búsqueda, filtros avanzados y perfiles detallados. Interfaz accesible y rápida.",
+      bettingApp: "Aplicación de apuestas deportivas con datos en tiempo real, base de datos PostgreSQL y lógica de negocio compleja.",
+      euclides: "Sitio WordPress profesional con diseño a medida, optimización SEO on-page y tiempos de carga sub-segundo.",
+      altoDominicos: "Portal inmobiliario/comercial WordPress con gestión de contenido dinámica y diseño orientado a captación de leads.",
+      waw: "Sitio corporativo WordPress con plugins personalizados, integraciones de terceros y diseño brand-aligned.",
+      navegue: "Plataforma web WordPress con funcionalidades custom y experiencia de usuario centrada en simplicidad.",
+      klaims: "Sitio corporativo internacional WordPress. Soporte multiidioma, alta performance y optimización para mercados globales.",
+      justecorp: "Web empresarial WordPress con integraciones avanzadas, diseño profesional y arquitectura de contenido escalable.",
     },
   },
 
   // Skills
   skills: {
     label: "Habilidades",
-    title: "Stack tecnico",
+    title: "Stack técnico",
     description:
-      "Las tecnologias y herramientas con las que trabajo a diario para construir aplicaciones web modernas.",
+      "Tecnologías y herramientas que utilizo a diario para diseñar, construir y desplegar aplicaciones web de calidad profesional.",
     categories: {
       languages: "Lenguajes",
-      frameworks: "Frameworks & Librerias",
+      frameworks: "Frameworks & Librerías",
       cms: "CMS & Plataformas",
       payments: "Integraciones de Pago",
     },
@@ -98,25 +100,25 @@ export const es = {
   // Contact
   contact: {
     label: "Contacto",
-    title: "Hablemos",
+    title: "Trabajemos juntos",
     description:
-      "Si quieres discutir un proyecto o simplemente saludar, no dudes en contactarme.",
-    location: "Ubicacion",
+      "¿Tienes un proyecto en mente o buscas un desarrollador para tu equipo? Escríbeme y conversemos sobre cómo puedo aportar valor.",
+    location: "Ubicación",
   },
 
   // Contact Modal
   modal: {
     sendMessage: "Enviar mensaje",
-    messageTo: "Tu mensaje llegara directamente a cesaramuroc@gmail.com",
-    messageSent: "Mensaje enviado!",
-    thankYou: "Gracias por contactarme, te respondere pronto.",
+    messageTo: "Tu mensaje llegará directamente a cesaramuroc@gmail.com",
+    messageSent: "¡Mensaje enviado!",
+    thankYou: "Gracias por contactarme. Responderé a la brevedad.",
     close: "Cerrar",
     name: "Nombre",
-    namePlaceholder: "Tu nombre",
+    namePlaceholder: "Tu nombre completo",
     email: "Email",
     emailPlaceholder: "tu@email.com",
     message: "Mensaje",
-    messagePlaceholder: "Cuentame sobre tu proyecto...",
+    messagePlaceholder: "Cuéntame sobre tu proyecto o la oportunidad...",
     sending: "Enviando...",
     send: "Enviar mensaje",
   },
@@ -124,11 +126,11 @@ export const es = {
   // Floating buttons
   floating: {
     whatsappMessage:
-      "Hola Cesar! Vi tu portafolio y me gustaria contactarte.",
+      "Hola César, vi tu portafolio y me gustaría conversarte sobre una oportunidad.",
   },
 
   // Footer
   footer: {
-    builtWith: "Construido con Next.js, Tailwind CSS y desplegado en Vercel",
+    builtWith: "Diseñado y desarrollado con Next.js, Tailwind CSS — desplegado en Vercel",
   },
 } as const;
