@@ -224,18 +224,6 @@ html {
   animation: gradient-shift 6s ease infinite;
 }
 
-/* ─── Typewriter cursor blink ─────────────────────────────── */
-@keyframes blink-caret {
-  0%, 100% { border-color: hsl(var(--primary)); }
-  50% { border-color: transparent; }
-}
-
-.typewriter-cursor {
-  border-right: 2px solid hsl(var(--primary));
-  animation: blink-caret 0.8s step-end infinite;
-  padding-right: 2px;
-}
-
 /* ─── Background glow blobs ──────────────────────────────── */
 @keyframes blob-move {
   0%, 100% { transform: translate(0, 0) scale(1); }

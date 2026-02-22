@@ -46,7 +46,7 @@ export function ContactSection() {
         </ScrollReveal>
 
         <StaggerChildren className="grid gap-4 sm:grid-cols-3">
-          {/* Email card — abre modal */}
+          {/* Email card — abre modal
           <button
             onClick={() => setModalOpen(true)}
             className="card-glow stagger-item group flex items-center gap-4 rounded-xl border border-border bg-card p-6 text-left transition-all duration-300 hover:border-primary/40 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5"
@@ -64,6 +64,7 @@ export function ContactSection() {
             </div>
             <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-colors group-hover:text-primary" />
           </button>
+          */}
 
           {links.map((link) => (
             <a

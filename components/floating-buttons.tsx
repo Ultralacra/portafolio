@@ -58,16 +58,16 @@ export function FloatingButtons() {
           <WhatsAppIcon className="relative h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
         </a>
 
-        {/* Email modal */}
+        {/* Email modal
         <button
           onClick={() => setModalOpen(true)}
           aria-label="Enviar email"
           className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-primary/40"
         >
-          {/* Pulse ring */}
           <span className="absolute inset-0 rounded-full bg-primary opacity-0 group-hover:animate-ping group-hover:opacity-20" />
           <MailIcon className="relative h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
         </button>
+        */}
       </div>
 
       <ContactModal open={modalOpen} onClose={() => setModalOpen(false)} />

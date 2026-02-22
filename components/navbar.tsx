@@ -1,15 +1,13 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Globe } from "lucide-react";
 import { useI18n } from "@/lib/i18n/provider";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
   const { locale, setLocale, t } = useI18n();
-  const indicatorRef = useRef<HTMLDivElement>(null);
 
   const navLinks = [
     { label: t.nav.about, href: "#about" },
@@ -23,51 +21,6 @@ export function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Track active section on scroll
-  useEffect(() => {
-    const sections = ["about", "projects", "skills", "contact"];
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(`#${entry.target.id}`);
-          }
-        });
-      },
-      { threshold: 0.3, rootMargin: "-80px 0px -40% 0px" },
-    );
-
-    sections.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
-  // Animate the sliding indicator
-  useEffect(() => {
-    const indicator = indicatorRef.current;
-    if (!indicator) return;
-
-    const activeLink = document.querySelector(
-      `nav a[href="${activeSection}"]`,
-    ) as HTMLElement | null;
-
-    if (activeLink) {
-      const nav = activeLink.closest("ul");
-      if (!nav) return;
-      const navRect = nav.getBoundingClientRect();
-      const linkRect = activeLink.getBoundingClientRect();
-      indicator.style.opacity = "1";
-      indicator.style.width = `${linkRect.width + 16}px`;
-      indicator.style.transform = `translateX(${linkRect.left - navRect.left - 8}px)`;
-    } else {
-      indicator.style.opacity = "0";
-    }
-  }, [activeSection]);
 
   function toggleLocale() {
     setLocale(locale === "es" ? "en" : "es");
@@ -105,20 +58,11 @@ export function Navbar() {
           {/* Desktop nav */}
           <div className="hidden items-center gap-8 md:flex">
             <ul className="relative flex items-center gap-8">
-              {/* Sliding active indicator */}
-              <div
-                ref={indicatorRef}
-                className="absolute -bottom-1 h-0.5 rounded-full bg-primary transition-all duration-300 ease-out opacity-0"
-              />
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className={`underline-grow text-sm transition-colors duration-200 ${
-                      activeSection === link.href
-                        ? "text-primary"
-                        : "text-muted-foreground hover:text-primary"
-                    }`}
+                    className="underline-grow text-sm text-muted-foreground transition-colors duration-200 hover:text-primary"
                   >
                     {link.label}
                   </a>
@@ -220,11 +164,7 @@ export function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className={`block rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
-                    activeSection === link.href
-                      ? "bg-primary/10 text-primary"
-                      : "text-muted-foreground hover:bg-primary/10 hover:text-primary"
-                  }`}
+                  className="block rounded-lg px-3 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-primary/10 hover:text-primary"
                   onClick={(e) => handleMobileNavClick(e, link.href)}
                 >
                   {link.label}
