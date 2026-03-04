@@ -30,7 +30,13 @@ const projects: Project[] = [
   {
     name: "Animalaria",
     descriptionKey: "animalaria",
-    techStack: ["Next.js", "Material UI", "TypeScript", "Transbank", "Mercado Pago"],
+    techStack: [
+      "Next.js",
+      "Material UI",
+      "TypeScript",
+      "Transbank",
+      "Mercado Pago",
+    ],
     liveUrl: "https://www.animalaria.cl/",
     date: "2024",
     category: "nextjs",
@@ -40,7 +46,13 @@ const projects: Project[] = [
   {
     name: "Stickys",
     descriptionKey: "stickys",
-    techStack: ["Next.js", "Material UI", "TypeScript", "Transbank", "Mercado Pago"],
+    techStack: [
+      "Next.js",
+      "Material UI",
+      "TypeScript",
+      "Transbank",
+      "Mercado Pago",
+    ],
     liveUrl: "https://stickys.cl/",
     date: "2024",
     category: "nextjs",

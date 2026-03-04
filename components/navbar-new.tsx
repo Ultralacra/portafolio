@@ -30,7 +30,7 @@ export function Navbar() {
           }
         });
       },
-      { threshold: 0.3, rootMargin: "-100px 0px -60% 0px" }
+      { threshold: 0.3, rootMargin: "-100px 0px -60% 0px" },
     );
 
     const sections = document.querySelectorAll("section[id]");
@@ -52,7 +52,11 @@ export function Navbar() {
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        transition={{ duration: 0.8, delay: 1.5, ease: [0.215, 0.61, 0.355, 1] }}
+        transition={{
+          duration: 0.8,
+          delay: 1.5,
+          ease: [0.215, 0.61, 0.355, 1],
+        }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
             ? "bg-background/60 backdrop-blur-xl border-b border-border/30 shadow-lg shadow-black/5"
@@ -84,7 +88,11 @@ export function Navbar() {
                     <motion.div
                       layoutId="navIndicator"
                       className="absolute inset-0 rounded-full bg-primary/10 border border-primary/20"
-                      transition={{ type: "spring", damping: 25, stiffness: 300 }}
+                      transition={{
+                        type: "spring",
+                        damping: 25,
+                        stiffness: 300,
+                      }}
                     />
                   )}
                   <span
@@ -175,8 +183,12 @@ export function Navbar() {
               animate="open"
               exit="closed"
               variants={{
-                open: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } },
-                closed: { transition: { staggerChildren: 0.05, staggerDirection: -1 } },
+                open: {
+                  transition: { staggerChildren: 0.1, delayChildren: 0.1 },
+                },
+                closed: {
+                  transition: { staggerChildren: 0.05, staggerDirection: -1 },
+                },
               }}
             >
               {navLinks.map((link) => (

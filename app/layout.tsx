@@ -18,7 +18,14 @@ export const metadata: Metadata = {
   title: "Cesar | Full Stack Developer",
   description:
     "Portafolio profesional de Cesar - Desarrollador Full Stack especializado en TypeScript, Next.js y PostgreSQL. 3D interactive portfolio experience.",
-  keywords: ["developer", "full stack", "TypeScript", "Next.js", "portfolio", "3D"],
+  keywords: [
+    "developer",
+    "full stack",
+    "TypeScript",
+    "Next.js",
+    "portfolio",
+    "3D",
+  ],
   openGraph: {
     title: "Cesar | Full Stack Developer",
     description: "Interactive 3D portfolio — TypeScript, Next.js, PostgreSQL",

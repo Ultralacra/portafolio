@@ -16,7 +16,8 @@ export function Preloader() {
           return 100;
         }
         // Accelerate progress towards the end
-        const increment = prev < 70 ? Math.random() * 8 + 2 : Math.random() * 15 + 5;
+        const increment =
+          prev < 70 ? Math.random() * 8 + 2 : Math.random() * 15 + 5;
         return Math.min(prev + increment, 100);
       });
     }, 80);
@@ -53,7 +54,10 @@ export function Preloader() {
           {/* Glowing orb */}
           <motion.div
             className="absolute h-[300px] w-[300px] rounded-full blur-[120px]"
-            style={{ background: "radial-gradient(circle, hsl(166 72% 50% / 0.15), transparent)" }}
+            style={{
+              background:
+                "radial-gradient(circle, hsl(166 72% 50% / 0.15), transparent)",
+            }}
             animate={{
               scale: [1, 1.2, 1],
               opacity: [0.3, 0.6, 0.3],
@@ -67,7 +71,11 @@ export function Preloader() {
               className="overflow-hidden"
               initial={{ width: 0 }}
               animate={{ width: "auto" }}
-              transition={{ duration: 1.2, ease: [0.76, 0, 0.24, 1], delay: 0.2 }}
+              transition={{
+                duration: 1.2,
+                ease: [0.76, 0, 0.24, 1],
+                delay: 0.2,
+              }}
             >
               <motion.h1
                 className="whitespace-nowrap font-mono text-5xl font-bold tracking-tighter text-foreground md:text-7xl"
@@ -100,7 +108,11 @@ export function Preloader() {
               <motion.div
                 className="absolute top-0 left-0 h-full w-8 bg-gradient-to-r from-transparent via-primary/60 to-transparent"
                 animate={{ x: ["-32px", "192px"] }}
-                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
               />
             </div>
 

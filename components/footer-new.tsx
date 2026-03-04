@@ -4,7 +4,13 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { useI18n } from "@/lib/i18n/provider";
 
-function MarqueeText({ text, direction = 1 }: { text: string; direction?: number }) {
+function MarqueeText({
+  text,
+  direction = 1,
+}: {
+  text: string;
+  direction?: number;
+}) {
   return (
     <div className="flex overflow-hidden whitespace-nowrap">
       <motion.div
@@ -36,7 +42,10 @@ export function Footer() {
   const y = useTransform(scrollYProgress, [0, 0.5], [50, 0]);
 
   return (
-    <footer ref={ref} className="relative overflow-hidden border-t border-border/20">
+    <footer
+      ref={ref}
+      className="relative overflow-hidden border-t border-border/20"
+    >
       {/* Marquee background */}
       <div className="pointer-events-none absolute inset-0 flex flex-col justify-center gap-4 overflow-hidden opacity-60">
         <MarqueeText text="CESAR AMURO" direction={1} />

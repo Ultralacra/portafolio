@@ -185,7 +185,10 @@ export function HeroSection() {
           animate="visible"
         >
           {/* Status badge */}
-          <motion.div variants={itemVariants} className="mb-8 flex justify-center">
+          <motion.div
+            variants={itemVariants}
+            className="mb-8 flex justify-center"
+          >
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 backdrop-blur-sm">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
@@ -221,7 +224,11 @@ export function HeroSection() {
 
               <motion.div
                 animate={{ y: [0, -8, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
               >
                 <Image
                   src={avatarImage}
@@ -244,7 +251,11 @@ export function HeroSection() {
                 <SplitText text={t.hero.greeting} delay={0.8} />
                 <br />
                 <span className="hero-gradient-text inline-block">
-                  <SplitText text="Cesar" delay={1.2} className="inline-block" />
+                  <SplitText
+                    text="Cesar"
+                    delay={1.2}
+                    className="inline-block"
+                  />
                 </span>
               </h1>
             </div>
@@ -286,7 +297,9 @@ export function HeroSection() {
                 />
               </svg>
             </motion.div>
-            <span className="font-mono text-xs tracking-wider">{t.hero.location}</span>
+            <span className="font-mono text-xs tracking-wider">
+              {t.hero.location}
+            </span>
           </motion.div>
 
           {/* CTA Buttons with magnetic effect */}

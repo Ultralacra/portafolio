@@ -125,9 +125,24 @@ function Scene() {
       <ParticleField />
       <TorusKnot />
 
-      <FloatingOrb position={[-3, 2, -2]} scale={1.2} speed={1.2} color="#2dd4bf" />
-      <FloatingOrb position={[3.5, -1.5, -4]} scale={0.8} speed={0.8} color="#38bdf8" />
-      <FloatingOrb position={[0, -3, -3]} scale={0.6} speed={1.5} color="#a78bfa" />
+      <FloatingOrb
+        position={[-3, 2, -2]}
+        scale={1.2}
+        speed={1.2}
+        color="#2dd4bf"
+      />
+      <FloatingOrb
+        position={[3.5, -1.5, -4]}
+        scale={0.8}
+        speed={0.8}
+        color="#38bdf8"
+      />
+      <FloatingOrb
+        position={[0, -3, -3]}
+        scale={0.6}
+        speed={1.5}
+        color="#a78bfa"
+      />
     </>
   );
 }

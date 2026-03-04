@@ -18,7 +18,9 @@ const AboutSection = dynamic(() =>
   import("@/components/about-section-new").then((mod) => mod.AboutSection),
 );
 const ProjectsSection = dynamic(() =>
-  import("@/components/projects-section-new").then((mod) => mod.ProjectsSection),
+  import("@/components/projects-section-new").then(
+    (mod) => mod.ProjectsSection,
+  ),
 );
 const SkillsSection = dynamic(() =>
   import("@/components/skills-section-new").then((mod) => mod.SkillsSection),

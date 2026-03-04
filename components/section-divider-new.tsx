@@ -11,7 +11,10 @@ export function SectionDivider({ className = "" }: { className?: string }) {
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   return (
-    <div ref={ref} className={`flex items-center justify-center py-8 ${className}`}>
+    <div
+      ref={ref}
+      className={`flex items-center justify-center py-8 ${className}`}
+    >
       <div className="flex items-center gap-4 w-full max-w-xs">
         <motion.div
           className="h-px flex-1 bg-gradient-to-r from-transparent to-primary/20"

@@ -32,7 +32,7 @@ export function CustomCursor() {
     const handleMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       const interactive = target.closest(
-        "a, button, [role='button'], input, textarea, select, [data-cursor]"
+        "a, button, [role='button'], input, textarea, select, [data-cursor]",
       );
       if (interactive) {
         setIsHovering(true);
@@ -44,7 +44,7 @@ export function CustomCursor() {
     const handleMouseOut = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       const interactive = target.closest(
-        "a, button, [role='button'], input, textarea, select, [data-cursor]"
+        "a, button, [role='button'], input, textarea, select, [data-cursor]",
       );
       if (interactive) {
         setIsHovering(false);
@@ -69,8 +69,14 @@ export function CustomCursor() {
       window.removeEventListener("mouseup", handleMouseUp);
       document.removeEventListener("mouseover", handleMouseOver);
       document.removeEventListener("mouseout", handleMouseOut);
-      document.documentElement.removeEventListener("mouseleave", handleMouseLeave);
-      document.documentElement.removeEventListener("mouseenter", handleMouseEnter);
+      document.documentElement.removeEventListener(
+        "mouseleave",
+        handleMouseLeave,
+      );
+      document.documentElement.removeEventListener(
+        "mouseenter",
+        handleMouseEnter,
+      );
     };
   }, [cursorX, cursorY]);
 

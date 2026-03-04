@@ -83,7 +83,10 @@ export function AboutSection() {
           animate={isInView ? "visible" : "hidden"}
           className="mb-20"
         >
-          <motion.div variants={itemVariants} className="mb-3 flex items-center gap-3">
+          <motion.div
+            variants={itemVariants}
+            className="mb-3 flex items-center gap-3"
+          >
             <div className="h-px w-12 bg-primary" />
             <span className="font-mono text-xs tracking-[0.3em] text-primary uppercase">
               {t.about.label}
@@ -117,7 +120,9 @@ export function AboutSection() {
               className={`group relative rounded-2xl border border-border/50 bg-card/50 backdrop-blur-sm p-8 transition-all duration-500 ${item.borderHover} hover:shadow-2xl hover:shadow-primary/5`}
             >
               {/* Gradient background on hover */}
-              <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${item.gradient} opacity-0 transition-opacity duration-500 group-hover:opacity-100`} />
+              <div
+                className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${item.gradient} opacity-0 transition-opacity duration-500 group-hover:opacity-100`}
+              />
 
               {/* Content */}
               <div className="relative z-10">

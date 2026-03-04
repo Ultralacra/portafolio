@@ -81,7 +81,9 @@ export function ContactSection() {
               className={`group relative flex items-center gap-4 overflow-hidden rounded-2xl border border-border/30 bg-card/30 p-8 backdrop-blur-md transition-all duration-500 hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5`}
             >
               {/* Gradient bg */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${link.gradient} opacity-0 transition-opacity duration-500 group-hover:opacity-100`} />
+              <div
+                className={`absolute inset-0 bg-gradient-to-br ${link.gradient} opacity-0 transition-opacity duration-500 group-hover:opacity-100`}
+              />
 
               <div className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-white/5 border border-white/10 text-primary">
                 <link.icon className="h-6 w-6" />

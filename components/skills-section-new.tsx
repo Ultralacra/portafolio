@@ -63,14 +63,17 @@ function AnimatedBar({ level, delay }: { level: number; delay: number }) {
           observer.unobserve(el);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
     observer.observe(el);
     return () => observer.disconnect();
   }, [level, delay]);
 
   return (
-    <div ref={ref} className="relative h-1 overflow-hidden rounded-full bg-white/5">
+    <div
+      ref={ref}
+      className="relative h-1 overflow-hidden rounded-full bg-white/5"
+    >
       <motion.div
         className="absolute inset-y-0 left-0 rounded-full"
         style={{
@@ -87,7 +90,12 @@ function AnimatedBar({ level, delay }: { level: number; delay: number }) {
           className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-transparent via-white/20 to-transparent"
           style={{ width: "30%" }}
           animate={{ x: ["-100%", "400%"] }}
-          transition={{ duration: 2, delay: delay / 1000 + 1, repeat: Infinity, repeatDelay: 3 }}
+          transition={{
+            duration: 2,
+            delay: delay / 1000 + 1,
+            repeat: Infinity,
+            repeatDelay: 3,
+          }}
         />
       )}
     </div>
@@ -121,7 +129,7 @@ function AnimatedNumber({ target, delay }: { target: number; delay: number }) {
           observer.unobserve(el);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
     observer.observe(el);
     return () => observer.disconnect();
@@ -198,7 +206,9 @@ export function SkillsSection() {
                   <div key={skill.name}>
                     <div className="mb-1.5 flex items-center justify-between">
                       <span className="text-sm text-foreground/80">
-                        {(t.skills.items as Record<string, string>)[skill.name] || skill.name}
+                        {(t.skills.items as Record<string, string>)[
+                          skill.name
+                        ] || skill.name}
                       </span>
                       <AnimatedNumber
                         target={skill.level}
